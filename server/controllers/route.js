@@ -4,6 +4,7 @@ const router = express.Router();
 const contactRoute = require('./contact/_routes')
 const propertyRoute = require('./property/_routes');
 const leadRoute = require('./lead/_routes');
+const meetingRoute = require("./meeting/_routes");
 const taskRoute = require('./task/_routes');
 const reportingRoute = require('./reporting/_routes');
 const documentRoute = require('./document/_routes');
@@ -13,7 +14,6 @@ const route = require('./route/_routes');
 const emailRoute = require('./emailHistory/_routes');
 const phoneCallRoute = require('./phoneCall/_routes');
 const TextMsgRoute = require('./textMsg/_routes');
-const meetingRoute = require('./meeting/_routes');
 const paymentRoute = require('./payment/_routes');
 const roleAccessRoute = require('./roleAccess/_routes');
 const imagesRoute = require('./images/_routes');
@@ -31,8 +31,8 @@ const invoicesRoute = require("./invoices/_routes")
 
 //Api`s
 router.use('/contact', contactRoute);
-router.use('/property', propertyRoute)
-router.use('/lead', leadRoute)
+router.use('/property', propertyRoute);
+router.use('/lead', leadRoute);
 router.use('/task', taskRoute);
 router.use('/document', documentRoute);
 router.use('/reporting', reportingRoute);
